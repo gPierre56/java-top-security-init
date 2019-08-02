@@ -15,17 +15,16 @@ import java.util.List;
 @WebServlet("/users/list")
 public class ListUserCtrl extends HttpServlet {
 
-    private UserService userService = ServicesFactory.USER_SERVICE;
+	private UserService userService = ServicesFactory.USER_SERVICE;
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<User> users = this.userService.list();
+		List<User> users = this.userService.list();
 
-        req.setAttribute("users", users);
+		req.setAttribute("users", users);
 
-        req.getRequestDispatcher("/WEB-INF/views/users/listUsers.jsp").forward(req, resp);
-    }
-
+		req.getRequestDispatcher("/WEB-INF/views/users/listUsers.jsp").forward(req, resp);
+	}
 
 }

@@ -15,12 +15,12 @@ create table token (
 );
 
 
-insert into user(firstname, lastname, login, password, is_admin) values ('Bilel', 'KHARBECHE', 'bilel', 'admin', true);
-insert into user(firstname, lastname, login, password) values ('Olivier', 'LASBLEIS', 'olivier', 'admin');
-insert into user(firstname, lastname, login, password) values ('Jean-baptiste', 'MERAND', 'jb', 'admin');
-insert into user(firstname, lastname, login, password) values ('Cécile', 'PEYRAS', 'cecile', 'admin');
-insert into user(firstname, lastname, login, password) values ('Guillaume', 'PIERRE', 'guillaume', 'admin');
-insert into user(firstname, lastname, login, password) values ('Kévin', 'SEGUINEAU', 'kevin', 'admin');
-insert into user(firstname, lastname, login, password) values ('Eloi', 'TURPIN', 'eloi', 'admin');
+insert into user(firstname, lastname, login, password, is_admin) values ('Bilel', 'KHARBECHE', 'bilel', '$2a$10$.oqwnPxCdVRCHyGhrnaLb.pgqbLpDjrVswi9ORsksi1g/r9LvHBxO', true);
+insert into user(firstname, lastname, login, password) values ('Olivier', 'LASBLEIS', 'olivier', '$2a$10$.oqwnPxCdVRCHyGhrnaLb.pgqbLpDjrVswi9ORsksi1g/r9LvHBxO');
+insert into user(firstname, lastname, login, password) values ('Jean-baptiste', 'MERAND', 'jb', '$2a$10$.oqwnPxCdVRCHyGhrnaLb.pgqbLpDjrVswi9ORsksi1g/r9LvHBxO');
+insert into user(firstname, lastname, login, password) values ('Cécile', 'PEYRAS', 'cecile', '$2a$10$.oqwnPxCdVRCHyGhrnaLb.pgqbLpDjrVswi9ORsksi1g/r9LvHBxO');
+insert into user(firstname, lastname, login, password) values ('Guillaume', 'PIERRE', 'guillaume', '$2a$10$.oqwnPxCdVRCHyGhrnaLb.pgqbLpDjrVswi9ORsksi1g/r9LvHBxO');
+insert into user(firstname, lastname, login, password) values ('Kévin', 'SEGUINEAU', 'kevin', '$2a$10$.oqwnPxCdVRCHyGhrnaLb.pgqbLpDjrVswi9ORsksi1g/r9LvHBxO');
+insert into user(firstname, lastname, login, password) values ('Eloi', 'TURPIN', 'eloi', '$2a$10$.oqwnPxCdVRCHyGhrnaLb.pgqbLpDjrVswi9ORsksi1g/r9LvHBxO');
 
 insert into token(token_value) values ('ceci est un secret inaccessible!!!');
